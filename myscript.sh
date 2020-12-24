@@ -174,7 +174,7 @@ echo -----------------------------
 
 
 
-myArrayCode=$(awk '{print $9, $10}' file.txt)
+myArrayCode=$(awk '{print $9}' file.txt)
 myArrayCode=($(echo "${myArrayCode[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
 
 echo "Коды возврата"
